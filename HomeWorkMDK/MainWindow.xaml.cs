@@ -69,8 +69,8 @@ namespace HomeWorkMDK
                 }
                 startDate = startDate.AddDays(1.0);
             }
-            Weekends.Text = weekends.ToString();
-            Holidays.Text = holidays.Count.ToString();
+            Weekends.Text += $"{weekends}";
+            Holidays.Text += $"{holidays.Count}";
             CountDaysLeft();
         }
 
